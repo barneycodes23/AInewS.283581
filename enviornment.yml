@@ -1,0 +1,13 @@
+name: aiproject_env
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - scipy
+  - pip
+  - pip:
+    - somepippackage
