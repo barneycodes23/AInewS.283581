@@ -35,4 +35,9 @@ We further analyzed the dataset and identified columns that were deemed vague an
 
 We discovered the presence of **categorical variables**. Given the distinction between categorical and continuous variables, our approach involved treating these two types of variables differently. Addressing the catergorical varialbles we decided to encode these variables which enables us to facilitate comparisons later in the project. Through visualizing categorical variables with filters, we were able to discern clear results, such as identifying the city with the highest number of customers and which city has the customers who spends the most. We gained insights into the customer bases as well. For instance, we observed a higher number of customers are students in Chicago compared to the other cities.
 
+We introduced a new variable, "composite_score", by combining the frequency index and account total. This composite_score serves as a benchmark value against which we can compare the performance of other coloumns. Then we draw generate a correlations heatmap to enhance our understanding of the relationships and to visualize the correlations within the dataset. We also deemed that a value with a correlation less that 0.01 comapred to composite_score would be deemed insignificant for further analysis hence we removed those coloumns.
+
+# Results
+
+
 
