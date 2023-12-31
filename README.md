@@ -22,10 +22,7 @@ In order to access the jupyter notebook file we need to create an enviornment fo
   - (RUN): conda activate aiproject_env
 - Finally **Run** the jupyter notebook.
 
-The aim of this analysis is identifing indistinguishable segments from the data provided in the shopEasy.csv and presenting the acknowledged patterns ---. The outline of this process is illustrated with the aid of a flowchart.
-
-
-
+The aim of this analysis is to identify indistinguishable segments from the data provided in the shopEasy.csv and acknowledge the patterns for tailoring marketing and special promotions to each of the identified segments. The outline of this process is illustrated with the aid of a flowchart.
 
 # Experimental Design
 
@@ -39,5 +36,49 @@ We introduced a new variable, "composite_score", by combining the frequency inde
 
 # Results
 
+The initial observation from the bar chart indicates a nearly equal distribution of customers across the three different cities. Additionally, the chart reveals a similarity in the usage of account types among customers in these three locations. This suggests a consistent pattern in customer distribution and account preferences across the cities. Following this we introduced various filters to discern distinctions, a notable finding emerged when visualizing the distribution of high spenders across the three cities. It becomes evident that Location 2 (Los Angeles) exhibits the highest number of high spenders. Several factors could contribute to this trend, with a primary consideration being the **effectiveness of marketing and branding efforts**. It is plausible that our initiatives resonated more successfully in the city with a higher concentration of customers who exhibit greater spending tendencies. As a strategic response, there is an opportunity to **channel marketing and branding efforts more intensively in the other two cities** to potentially enhance customer engagement and spending.
 
+Upon analyzing the monthly payments made by high spenders, a distinct variation in the **number of student accounts** becomes evident, particularly between New York (NY) and Chicago. Notably, Location 2 (LA) **does not** exhibit a substantial number of student accounts in comparison. This divergence suggests a unique demographic composition, with a **higher concentration of student accounts** using this feature is **observed in New York and Chicago**.Further analysing of this demographic distinction may inform targeted strategies for student engagement and tailored marketing efforts in these specific locations.
+
+Upon analyzing the data using the frequency index, we observed that all three locations and the various account types exhibit **relatively similar shopping patterns and frequencies**. This parallelism in shopping behavior suggests a **consistency in customer engagement and transactional activities across the different locations and account categories**. 
+
+We used both K-means and hierarchical clustering techniques to segment the dataset, categorizing it into seven distinct clusters based on various essential metrics such as account total, frequency index, item costs, item buy frequency, and more. This clustering methodology provides a sophisticated comprehension of customer diversity, facilitating the formulation of precise strategies for marketing and engagement. Subsequently, we will explore the specific characteristics associated with each cluster in detail:
+- Cluster 0 :
+  - Moderate account totals.
+  - Relatively lower item costs.
+  - Consistent yet restrained purchase frequency.
+- Cluster 1:
+  - Affluent customer segment.
+  - Higher account totals.
+  - Elevated item costs.
+  - Near-maximum item buy frequency, signifying an active and prosperous user base.
+- Cluster 2:
+  - Moderate account totals.
+  - Lower item costs.
+  - Somewhat reduced frequency of purchases.
+- Cluster 3:
+  - Diverse customer base.
+  - High account totals.
+  - Variable item costs.
+  - Varied purchase frequencies.
+- Cluster 4:
+  - Moderate account totals.
+  - Diverse item costs.
+  - Moderate purchase frequency.
+- Cluster 5:
+  - Smaller group of high-value customers.
+  - Significantly higher item costs.
+  - Consistent, near-maximum item buy frequency.
+- Cluster 6:
+  - Moderate account totals.
+  - Moderate item costs.
+  - Notably high item buy frequency.
+
+We utilized the silhouette score as a performance metric to evaluate the clustering algorithms, and the results indicated that K-means performed optimally with our dataset, achieving a silhouette score of 0.22, we have decided to adopt this approach for the customer segmentation. 
+
+# Conclusion
+
+In conclusion, it is important to underscore that the observed outcome of not achieving a high silhouette score, typically considered to be above 0.8, is **entirely anticipated**. This expectation arises from the nature of grouping a substantial dataset with a relatively limited number of columns(5-6). Furthermore, the **constrained range within our columns**, exemplified by the presence of only three account types, contributes to this anticipated outcome. Another factor to consider is that we are primarily dealing with categorical variables, which can pose challenges in achieving high silhouette scores in clustering analyses. 
+
+Considering all the factors discussed, achieving a silhouette score of 0.22 is indeed commendable. It signifies that, despite the complexities inherent in the dataset, the clustering algorithms, particularly K-means, have successfully identified discernible patterns and segments. This outcome provides a valuable foundation for targeted marketing and engagement strategies tailored to each cluster, thus optimizing the efficacy and ensuring that they are personalized to the specific characteristics and preferences within each identified cluster. This level of personalization enhances the potential impact of marketing and engagement efforts, nurturing a meaningful connection with the diverse customer base represented by the distinct clusters.
 
