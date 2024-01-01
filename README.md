@@ -74,7 +74,9 @@ We used both K-means and hierarchical clustering techniques to segment the datas
   - Moderate item costs.
   - Notably high item buy frequency.
 
-We utilized the silhouette score as a performance metric to evaluate the clustering algorithms, and the results indicated that K-means performed optimally with our dataset, achieving a silhouette score of 0.22, we have decided to adopt this approach for the customer segmentation. 
+We utilized the silhouette score as a performance metric to evaluate the clustering algorithms, and the results indicated that K-means performed optimally with our dataset, achieving a silhouette score of 0.22, we have decided to adopt this approach for the customer segmentation.
+
+![Alt Text](https://github.com/barneycodes23/AInewS/blob/main/images/kmeans.png)
 
 # Conclusion
 
