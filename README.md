@@ -22,7 +22,7 @@ In order to access the jupyter notebook file we need to create an enviornment fo
   - (RUN): conda activate aiproject_env
 - Finally **Run** the jupyter notebook.
 
-The aim of this analysis is to identify indistinguishable segments from the data provided in the shopEasy.csv and acknowledge the patterns for tailoring marketing and special promotions to each of the identified segments. The outline of this process is illustrated with the aid of a flowchart.
+The aim of this analysis is to identify indistinguishable segments from the data provided in the shopEasy.csv and acknowledge the patterns for tailoring marketing and special promotions to each of the identified segments. We initiate the process by preprocessing the dataset, following this, we encode categorical variables and visualize the dataset. Given the nature of the task is a clustering problem, we choose to employ K-means and hierarchical structuring as our models for the segmentation process. To measure the performance of our algorithms with the dataset, we utilize relevent metrics.
 
 # Experimental Design
 
@@ -47,32 +47,60 @@ We used both K-means and hierarchical clustering techniques to segment the datas
   - Moderate account totals.
   - Relatively lower item costs.
   - Consistent yet restrained purchase frequency.
+  
+   <p align="left">
+  <img src="https://github.com/barneycodes23/AInewS/blob/main/images/c0.png" width="200">
+</p>
+
 - Cluster 1:
   - Affluent customer segment.
   - Higher account totals.
   - Elevated item costs.
   - Near-maximum item buy frequency, signifying an active and prosperous user base.
+  <p align="left">
+  <img src="https://github.com/barneycodes23/AInewS/blob/main/images/c1.png" width="200">
+</p>
+
 - Cluster 2:
   - Moderate account totals.
   - Lower item costs.
   - Somewhat reduced frequency of purchases.
+  <p align="left">
+  <img src="https://github.com/barneycodes23/AInewS/blob/main/images/c2.png" width="200">
+</p>
+
 - Cluster 3:
   - Diverse customer base.
   - High account totals.
   - Variable item costs.
   - Varied purchase frequencies.
+  <p align="left">
+  <img src="https://github.com/barneycodes23/AInewS/blob/main/images/c3.png" width="200">
+</p>
+
 - Cluster 4:
   - Moderate account totals.
   - Diverse item costs.
   - Moderate purchase frequency.
+    <p align="left">
+  <img src="https://github.com/barneycodes23/AInewS/blob/main/images/c4.png" width="200">
+</p>
+
 - Cluster 5:
   - Smaller group of high-value customers.
   - Significantly higher item costs.
   - Consistent, near-maximum item buy frequency.
+    <p align="left">
+  <img src="https://github.com/barneycodes23/AInewS/blob/main/images/c5.png" width="200">
+</p>
+
 - Cluster 6:
   - Moderate account totals.
   - Moderate item costs.
   - Notably high item buy frequency.
+    <p align="left">
+  <img src="https://github.com/barneycodes23/AInewS/blob/main/images/c6.png" width="200">
+</p>
 
 We utilized the silhouette score as a performance metric to evaluate the clustering algorithms, and the results indicated that K-means performed optimally with our dataset, achieving a silhouette score of 0.22, we have decided to adopt this approach for the customer segmentation.
 
