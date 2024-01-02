@@ -22,7 +22,10 @@ In order to access the jupyter notebook file we need to create an enviornment fo
   - (RUN): conda activate aiproject_env
 - Finally **Run** the jupyter notebook.
 
-The aim of this analysis is to identify indistinguishable segments from the data provided in the shopEasy.csv and acknowledge the patterns for tailoring marketing and special promotions to each of the identified segments. We initiate the process by preprocessing the dataset, following this, we encode categorical variables and visualize the dataset. Given the nature of the task is a clustering problem, we choose to employ K-means and hierarchical structuring as our models for the segmentation process. To measure the performance of our algorithms with the dataset, we utilize relevent metrics.
+The aim of this analysis is to identify indistinguishable segments from the data provided in the shopEasy.csv and acknowledge the patterns for tailoring marketing and special promotions to each of the identified segments. The outline of this process is visualized using the flowchart below.
+ <p align="left">
+  <img src="https://github.com/barneycodes23/AInewS/blob/main/images/c0.png" width="200">
+</p>
 
 # Experimental Design
 
