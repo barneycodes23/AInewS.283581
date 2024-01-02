@@ -3,7 +3,7 @@
 ### Dataset Used: ShopEasy
 
 #### Group Members:
-* Martina Fagnani - 
+* Martina Fagnani - 283581
 * Banuka Kottage Don - 287711
 * Matilde Tambini - 286431
 
