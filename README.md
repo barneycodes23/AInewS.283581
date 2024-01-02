@@ -23,8 +23,8 @@ In order to access the jupyter notebook file we need to create an enviornment fo
 - Finally **Run** the jupyter notebook.
 
 The aim of this analysis is to identify indistinguishable segments from the data provided in the shopEasy.csv and acknowledge the patterns for tailoring marketing and special promotions to each of the identified segments. The outline of this process is visualized using the flowchart below.
- <p align="left">
-  <img src="https://github.com/barneycodes23/AInewS/blob/main/images/c0.png" width="200">
+ <p align="center">
+ <img src="https://github.com/barneycodes23/AInewS/blob/main/images/flow2.jpg" width="400">
 </p>
 
 # Experimental Design
